@@ -2,6 +2,7 @@
 const name = "Mahir";
 const ans=(a,b)=>a*b;
 const specialclass="simple-class";
+const date=new Date();
 const Greet = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Greet = () => {
       <p>5*5 = {ans(5,5)}</p>
       <p>my friends list {[riyad,shawon,shafayet]}</p>
       <p className="{specialclass}">this is special class dynamic</p>
+      <p>Date :{date.getDate()}</p>
     </div>
   );
 }; 
