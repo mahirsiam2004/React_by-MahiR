@@ -19,8 +19,9 @@ import React from 'react';
 
 import { useState } from "react";
 
-const App = () => {
+const Alpp = () => {
   const [friends, setfriends] = useState(["Riyad","Shafayet"]);
+  const addmorefriends=()=>setfriends([...friends,"Mahir","siam","muhin"]);
   return (
     <section>
       {
@@ -28,6 +29,7 @@ const App = () => {
           <li key={Math.random()}>{f}</li>
         ))
       }
+      <button onClick={addmorefriends}>Add more friends</button>
     </section>
   );
 };
